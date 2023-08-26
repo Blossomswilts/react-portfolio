@@ -1,22 +1,27 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import PortfolioItems from "../data/portfolio.js";
 
-function PortfolioData({ title, imgUrl, tech, link }) {
+function PortfolioCard() {
     return (
         <div>
-          <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={imgUrl} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>
-            {tech}
-        </Card.Text>
-        <Button variant="primary" src={link}>Check it out!</Button>
-      </Card.Body>
-    </Card>  
-                    
+            {PortfolioItems.map((item) => (
+                <Card key={item.title} style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={item.imgUrl} />
+                    <Card.Body>
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Text>
+                            {item.description}
+                            {item.tech}
+                        </Card.Text>
+                        <Button variant="primary" href={item.link}>
+                            Check it out!
+                        </Button>
+                    </Card.Body>
+                </Card>
+            ))}
         </div>
     );
 }
 
-export default PortfolioData;
+export default PortfolioCard;

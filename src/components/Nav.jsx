@@ -5,7 +5,7 @@ function Navigation() {
     const currentPage = useLocation().pathname;
     return (
         <div>
-            <Navbar bg="dark" data-bs-theme="dark" expand='lg'>
+            <Navbar bg="dark" data-bs-theme="dark" expand="lg">
                 <Container>
                     <Navbar.Brand
                         as={Link}
