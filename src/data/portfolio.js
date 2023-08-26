@@ -1,8 +1,8 @@
-export default [
+const portfolioItems = [
     {
-        title:'',
+        title:'Donomon Choice RPG',
         imgUrl:'',
-        tech:'',
+        tech: '',
         link:'',
     },
     {
@@ -36,3 +36,5 @@ export default [
         link:'',
     }
 ]   
+
+export default portfolioItems;
