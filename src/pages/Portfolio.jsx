@@ -5,7 +5,7 @@ import stack from "../data/stack.js";
 function Portfolio() {
     return (
         <div>
-            <h2>Skills I&apos;ve acquired</h2>
+            <h1>Skills I&apos;ve acquired</h1>
             <Container>
                 <Row>
                     <Col xs={6} md={4}>

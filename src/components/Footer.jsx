@@ -3,9 +3,18 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+const style = {
+    width: "100%",
+    height: "auto",
+    borderRadius: "90%",
+    boxShadow: "0 0 10px black",
+    bottom: "0",
+    position: "fixed",
+};
+
 function Footer() {
     return (
-        <div>
+        <div style={style}>
             <Card
                 className="text-center"
                 bg="dark"
