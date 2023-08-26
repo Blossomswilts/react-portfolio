@@ -1,4 +1,3 @@
-
 function PortfolioData({ title, imgUrl, tech, link }) {
     return (
         <div>
