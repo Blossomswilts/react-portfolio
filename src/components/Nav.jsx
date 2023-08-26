@@ -1,26 +1,53 @@
-import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Portfolio from "../pages/Portfolio";
-import AboutMe from "../pages/AboutMe";
-import Contact from "../pages/Contact";
 
 function Navigation() {
+    const currentPage = useLocation().pathname;
     return (
         <div>
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
-                    <Navbar.Brand as={Link} to="/">
+                    <Navbar.Brand
+                        as={Link}
+                        to="/"
+                        className={
+                            currentPage === "/" ? "nav-link active" : "nav-link"
+                        }
+                    >
                         Michael Tranquillo
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/">
+                        <Nav.Link
+                            as={Link}
+                            to="/About"
+                            className={
+                                currentPage === "/About"
+                                    ? "nav-link active"
+                                    : "nav-link"
+                            }
+                        >
                             About
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/portfolio">
+                        <Nav.Link
+                            as={Link}
+                            to="/Portfolio"
+                            className={
+                                currentPage === "/Portfolio"
+                                    ? "nav-link active"
+                                    : "nav-link"
+                            }
+                        >
                             Portfolio
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/contact">
+                        <Nav.Link
+                            as={Link}
+                            to="/Contact"
+                            className={
+                                currentPage === "/Contact"
+                                    ? "nav-link active"
+                                    : "nav-link"
+                            }
+                        >
                             Contact
                         </Nav.Link>
                         <button type="button" className="btn btn-outline-light">
@@ -29,13 +56,6 @@ function Navigation() {
                     </Nav>
                 </Container>
             </Navbar>
-            <div>
-                <Routes>
-                    <Route path="/" element={<AboutMe />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
-            </div>
         </div>
     );
 }
