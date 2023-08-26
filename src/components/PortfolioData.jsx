@@ -1,4 +1,3 @@
-import React from "react";
 
 function PortfolioData({ title, imgUrl, tech, link }) {
     return (

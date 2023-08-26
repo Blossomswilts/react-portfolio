@@ -5,7 +5,7 @@ function Navigation() {
     const currentPage = useLocation().pathname;
     return (
         <div>
-            <Navbar bg="dark" data-bs-theme="dark">
+            <Navbar bg="dark" data-bs-theme="dark" expand='lg'>
                 <Container>
                     <Navbar.Brand
                         as={Link}
@@ -16,7 +16,7 @@ function Navigation() {
                     >
                         Michael Tranquillo
                     </Navbar.Brand>
-                    <Nav className="me-auto">
+                    <Nav className="justify-content-end">
                         <Nav.Link
                             as={Link}
                             to="/About"
