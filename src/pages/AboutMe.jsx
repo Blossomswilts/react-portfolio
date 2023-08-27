@@ -34,7 +34,7 @@ function AboutMe() {
                     </Col>
                     <Col xs={12} md={12} lg={6}>
                         <Row>
-                            <p style={aboutMeStyle}>
+                            <p style={aboutMeStyle} className="aboutMe">
                                 My name is Michael Tranquillo and I&apos;m a
                                 full stack web developer. Currently, I work as a
                                 massage therapist and HR manager, but I&apos;m
