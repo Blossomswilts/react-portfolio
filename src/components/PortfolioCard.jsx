@@ -5,8 +5,8 @@ import PortfolioItems from "../data/portfolio.js";
 function PortfolioCard() {
     return (
         <div>
-            {PortfolioItems.map((item) => (
-                <Card key={item.title} style={{ width: "18rem" }}>
+            {PortfolioItems.map((item, index) => (
+                <Card key={index} style={{ width: "18rem" }}>
                     <Card.Img variant="top" src={item.imgUrl} />
                     <Card.Body>
                         <Card.Title>{item.title}</Card.Title>

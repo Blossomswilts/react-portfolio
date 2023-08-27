@@ -18,9 +18,26 @@ h1 {
   margin-top: 1em;
 }
 
+form {
+  padding-right: 2em;
+  border-radius: 10px;
+}
+
+button {
+  width: 100%;
+}
+
+.aboutMe {
+  background-color: #bababa;
+}
+
 @media screen and (max-width: 982px) {
   body {
     font-size: 14px;
     padding-bottom: 250px;
+  }
+
+  form {
+    padding-right: 0;
   }
 }
