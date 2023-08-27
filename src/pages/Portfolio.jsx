@@ -14,20 +14,22 @@ function Portfolio() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://placehold.co/100x50?text=FrontEnd"
+                            src="../src/assets/images/hexrgb.jpg"
                             alt="FrontEnd"
                         />
                         <Carousel.Caption>
                             <h5>{stack[0].name}</h5>
+                            <div className="stacks">
                             {stack[0].technologies.map((tech) => (
                                 <p key={tech.id}>{tech.name}</p>
                             ))}
+                            </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://placehold.co/100x50?text=BackEnd"
+                            src="../src/assets/images/hexrgb.jpg"
                             alt="BackEnd"
                         />
                         <Carousel.Caption>
@@ -40,7 +42,7 @@ function Portfolio() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://placehold.co/100x50?text=Database"
+                            src="../src/assets/images/hexrgb.jpg"
                             alt="Database"
                         />
                         <Carousel.Caption>

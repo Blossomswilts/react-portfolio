@@ -5,8 +5,10 @@
 }
 
 .carousel {
-    margin-bottom: 2em;
-    display: flex;
+  width:700px;
+  height:500px;
+  margin: auto;
+  margin-bottom: 2em;
 }
 
 .carousel .carousel-caption {
@@ -18,15 +20,41 @@
 .carousel .carousel-caption h5 {
     padding-bottom: 5%;
     padding-top: 5%;
-    font-size: 3.2em;
-    font-weight: 600;
+    font-size: 3.5em;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 .carousel .carousel-caption p {
     flex-direction: row;
     border: 2px solid green;
     border-radius: 10px;
-    width: 13%;
+    width: 17%;
     background-color: rgb(126, 126, 128);
     font-size: 1.2em;
     color: rgb(255, 255, 255);
+}
+
+.carousel .carousel-caption p:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(126, 126, 128);
+    transition: 0.5s;
+}
+
+.carousel .carousel-caption a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .carousel {
+      width:auto;
+      height:auto;
+    }
+    .carousel .carousel-caption p {
+        width: 40%;
+    }
+    .carousel .carousel-caption .stacks{
+        overflow: scroll;
+    }
 }
