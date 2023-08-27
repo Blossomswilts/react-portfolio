@@ -1,15 +1,15 @@
 .carousel .carousel-indicators button {
     width: 3em;
-    height: .5em;
+    height: 0.5em;
     border-radius: 35%;
     margin-bottom: 3em;
 }
 
 .carousel {
-  width:700px;
-  height:500px;
-  margin: auto;
-  margin-top: 2em;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    margin-top: 2em;
 }
 
 .carousel .carousel-caption {
@@ -22,9 +22,10 @@
     padding-bottom: 5%;
     padding-top: 5%;
     font-size: 3.5em;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
+    font-weight: 700;
+    /* add color gradient */
+    color: green;
+    text-decoration: underline 1px rgb(126, 126, 128);
 }
 .carousel .carousel-caption p {
     flex-direction: row;
@@ -34,6 +35,7 @@
     background-color: rgb(126, 126, 128);
     font-size: 1.2em;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .carousel .carousel-caption p:hover {
@@ -47,22 +49,41 @@
     text-decoration: none;
 }
 
+.portfolioCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.stacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 20%;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 900px) {
     .carousel {
-      width:auto;
-      height:auto;
-      padding-bottom: 1em;
-      margin-bottom: 2em;
+        width: auto;
+        height: auto;
+        padding-bottom: 1em;
+        margin-bottom: 2em;
     }
     .carousel .carousel-caption p {
         width: 40%;
     }
-    .carousel .carousel-caption .stacks{
+    .carousel .carousel-caption .stacks {
         overflow: scroll;
     }
     .carousel .carousel-indicators button {
         width: 2em;
-        height: .5em;
+        height: 0.5em;
         border-radius: 35%;
         margin-bottom: -2em;
     }

@@ -1,43 +1,45 @@
 /* body */
 body {
-  background-color: #a3a8b2;
-  color: #080808;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  align-items: center;
+    height: 100%;
+    background-color: #a3a8b2;
+    color: #080808;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 300px;
+    align-items: center;
 }
 
 h1 {
-  font-size: 3em;
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 1em;
-  margin-top: 1em;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 form {
-  padding-right: 2em;
-  border-radius: 10px;
+    padding-right: 2em;
+    border-radius: 10px;
 }
 
 button {
-  width: 100%;
+    width: 100%;
 }
 
 .aboutMe {
-  background-color: #bababa;
+    background-color: #bababa;
 }
 
 @media screen and (max-width: 982px) {
-  body {
-    font-size: 14px;
-    padding-bottom: 250px;
-  }
+    body {
+        font-size: 14px;
+        padding-bottom: 250px;
+    }
 
-  form {
-    padding-right: 0;
-  }
+    form {
+        padding-right: 0;
+    }
 }

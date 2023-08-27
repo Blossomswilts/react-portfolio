@@ -1,11 +1,19 @@
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
+const style = {
+    position: "fixed",
+    top: "0",
+    right: "0",
+    left: "0",
+    zIndex: "100",
+};
+
 function Navigation() {
     const currentPage = useLocation().pathname;
     return (
         <div>
-            <Navbar bg="dark" data-bs-theme="dark" expand="lg">
+            <Navbar bg="dark" data-bs-theme="dark" expand="lg" style={style}>
                 <Container>
                     <Navbar.Brand
                         as={Link}
@@ -13,6 +21,7 @@ function Navigation() {
                         className={
                             currentPage === "/" ? "nav-link active" : "nav-link"
                         }
+                        navbarScroll
                     >
                         Michael Tranquillo
                     </Navbar.Brand>
@@ -50,12 +59,15 @@ function Navigation() {
                         >
                             Contact
                         </Nav.Link>
-                        <Link 
+                        <Link
                             to="https://drive.google.com/file/d/1aG0iJS-b27Ez9i0mgJlAVpurfSIeqMop/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <button type="button" className="btn btn-outline-light">
+                            <button
+                                type="button"
+                                className="btn btn-outline-light"
+                            >
                                 Resume
                             </button>
                         </Link>

@@ -15,7 +15,7 @@ function Portfolio() {
         <div>
             <Container>
                 <h1>Portfolio</h1>
-                <h2>Skills</h2>
+                <h2>Skills I&apos;ve Acquired</h2>
                 <Carousel
                     activeIndex={index}
                     onSelect={handleSelect}
@@ -45,9 +45,11 @@ function Portfolio() {
                         />
                         <Carousel.Caption>
                             <h5>{stack[1].name}</h5>
-                            {stack[1].technologies.map((tech) => (
-                                <p key={tech.id}>{tech.name}</p>
-                            ))}
+                            <div className="stacks">
+                                {stack[1].technologies.map((tech) => (
+                                    <p key={tech.id}>{tech.name}</p>
+                                ))}
+                            </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -58,9 +60,11 @@ function Portfolio() {
                         />
                         <Carousel.Caption>
                             <h5>{stack[2].name}</h5>
-                            {stack[2].technologies.map((tech) => (
-                                <p key={tech.id}>{tech.name}</p>
-                            ))}
+                            <div className="stacks">
+                                {stack[2].technologies.map((tech) => (
+                                    <p key={tech.id}>{tech.name}</p>
+                                ))}
+                            </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -71,7 +75,9 @@ function Portfolio() {
                     <h2>Projects</h2>
                 </Row>
                 <Row>
-                    <PortfolioCard />
+                    <div className="portfolioCard">
+                        <PortfolioCard />
+                    </div>
                 </Row>
             </Container>
         </div>

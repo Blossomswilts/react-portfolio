@@ -5,19 +5,18 @@ import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const style = {
-    width: "100%",
-    height: "auto",
-    bottom: "0",
     position: "fixed",
-    marginTop: "20px",
+    bottom: "0",
+    right: "0",
+    left: "0",
 };
 
 const linkStyles = {
-    color: 'green',
-    fontSize: '2.5em',
-    transition: 'color .15s ease-in-out',
-    margin: '.5em',
-  }
+    color: "green",
+    fontSize: "2.5em",
+    transition: "color .15s ease-in-out",
+    margin: ".5em",
+};
 
 function Footer() {
     return (
@@ -34,26 +33,29 @@ function Footer() {
                         but by the seeds that you plant.&quot; - Robert Louis
                         Stevenson
                     </Card.Title>
-                    <Card.Text>Check out my LinkedIn and GitHub!</Card.Text>
+                    <Card.Text>Check out my Social Media!</Card.Text>
                     <Link
                         to="https://www.linkedin.com/in/michael-tranquillo/"
                         target="_blank"
                         rel="noopener noreferrer"
-                    style={linkStyles}>
+                        style={linkStyles}
+                    >
                         <FaLinkedin />
                     </Link>
                     <Link
                         to="https://github.com/Blossomswilts"
                         target="_blank"
                         rel="noopener noreferrer"
-                    style={linkStyles}>
+                        style={linkStyles}
+                    >
                         <FaGithub />
                     </Link>
                     <Link
                         to="https://www.instagram.com/blossomswilt/"
                         target="_blank"
                         rel="noopener noreferrer"
-                    style={linkStyles}>
+                        style={linkStyles}
+                    >
                         <FaInstagram />
                     </Link>
                 </Card.Body>

@@ -20,7 +20,7 @@ function Contact() {
         <div>
             <h1>Get In Touch!</h1>
             <Row>
-                <Col xs={12} md={6}>
+                <Col xs={12} md={6} className="connect">
                     <h3>Let&apos;s connect</h3>
                     <p>
                         Please fill out the form within this section to contact
