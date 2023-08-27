@@ -25,14 +25,14 @@ function AboutMe() {
             <h1>About Me</h1>
             <Container className="d-flex p-4">
                 <Row>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={12} lg={6}>
                         <Image
                             src="../src/assets/images/profile.jpg"
                             alt="profile"
                             style={imageStyle}
                         />
                     </Col>
-                    <Col xs={12} md={4}>
+                    <Col xs={12} md={12} lg={6}>
                         <Row>
                             <p style={aboutMeStyle}>
                                 My name is Michael Tranquillo and I&apos;m a

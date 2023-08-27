@@ -7,6 +7,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 h1 {
@@ -15,4 +16,11 @@ h1 {
   line-height: 1.2;
   margin-bottom: 1em;
   margin-top: 1em;
+}
+
+@media screen and (max-width: 982px) {
+  body {
+    font-size: 14px;
+    padding-bottom: 250px;
+  }
 }
