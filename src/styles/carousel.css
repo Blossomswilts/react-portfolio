@@ -1,0 +1,30 @@
+.carousel .carousel-indicators button {
+    width: 3em;
+    height: .5em;
+    border-radius: 35%;
+}
+
+.carousel {
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.carousel .carousel-caption {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .carousel-caption h5 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.carousel .carousel-caption p {
+    flex-direction: row;
+    border: 2px solid green;
+    border-radius: 10px;
+    width: 13%;
+    background-color: rgb(126, 126, 128);
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}

@@ -1,32 +1,55 @@
+import Carousel from "react-bootstrap/Carousel";
+import { Container, Row } from "react-bootstrap";
 import PortfolioCard from "../components/PortfolioCard.jsx";
-import { Container, Col, Row } from "react-bootstrap";
 import stack from "../data/stack.js";
+import "../styles/carousel.css";
 
 function Portfolio() {
     return (
         <div>
-            <h1>Skills I&apos;ve acquired</h1>
             <Container>
-                <Row>
-                    <Col xs={12} md={4}>
-                        <h3>{stack[0].name}</h3>
-                        {stack[0].technologies.map((tech) => (
-                            <p key={tech.id}>{tech.name}</p>
-                        ))}
-                    </Col>
-                    <Col xs={12} md={4}>
-                        <h3>{stack[1].name}</h3>
-                        {stack[1].technologies.map((tech) => (
-                            <p key={tech.id}>{tech.name}</p>
-                        ))}
-                    </Col>
-                    <Col xs={12} md={4}>
-                        <h3>{stack[2].name}</h3>
-                        {stack[2].technologies.map((tech) => (
-                            <p key={tech.id}>{tech.name}</p>
-                        ))}
-                    </Col>
-                </Row>
+                <h1>Portfolio</h1>
+                <Carousel data-bs-theme="dark">
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://placehold.co/100x50?text=FrontEnd"
+                            alt="FrontEnd"
+                        />
+                        <Carousel.Caption>
+                            <h5>{stack[0].name}</h5>
+                            {stack[0].technologies.map((tech) => (
+                                <p key={tech.id}>{tech.name}</p>
+                            ))}
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://placehold.co/100x50?text=BackEnd"
+                            alt="BackEnd"
+                        />
+                        <Carousel.Caption>
+                            <h5>{stack[1].name}</h5>
+                            {stack[1].technologies.map((tech) => (
+                                <p key={tech.id}>{tech.name}</p>
+                            ))}
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://placehold.co/100x50?text=Database"
+                            alt="Database"
+                        />
+                        <Carousel.Caption>
+                            <h5>{stack[2].name}</h5>
+                            {stack[2].technologies.map((tech) => (
+                                <p key={tech.id}>{tech.name}</p>
+                            ))}
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
             </Container>
 
             <Container>
