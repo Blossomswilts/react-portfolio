@@ -20,6 +20,7 @@ function Portfolio() {
                     activeIndex={index}
                     onSelect={handleSelect}
                     data-bs-theme="dark"
+                    interval={null}
                 >
                     <Carousel.Item>
                         <img
