@@ -9,6 +9,7 @@ function Portfolio() {
         <div>
             <Container>
                 <h1>Portfolio</h1>
+                <h2>Skills</h2>
                 <Carousel data-bs-theme="dark">
                     <Carousel.Item>
                         <img

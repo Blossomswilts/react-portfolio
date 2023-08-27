@@ -18,6 +18,8 @@
 .carousel .carousel-caption h5 {
     padding-bottom: 5%;
     padding-top: 5%;
+    font-size: 3.2em;
+    font-weight: 600;
 }
 .carousel .carousel-caption p {
     flex-direction: row;
