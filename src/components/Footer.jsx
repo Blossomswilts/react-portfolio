@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const style = {
@@ -47,6 +48,13 @@ function Footer() {
                         rel="noopener noreferrer"
                     style={linkStyles}>
                         <FaGithub />
+                    </Link>
+                    <Link
+                        to="https://www.instagram.com/blossomswilt/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    style={linkStyles}>
+                        <FaInstagram />
                     </Link>
                 </Card.Body>
                 <Card.Footer className="text-muted">

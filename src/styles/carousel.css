@@ -2,13 +2,14 @@
     width: 3em;
     height: .5em;
     border-radius: 35%;
+    margin-bottom: 3em;
 }
 
 .carousel {
   width:700px;
   height:500px;
   margin: auto;
-  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .carousel .carousel-caption {
@@ -29,7 +30,7 @@
     flex-direction: row;
     border: 2px solid green;
     border-radius: 10px;
-    width: 17%;
+    width: 20%;
     background-color: rgb(126, 126, 128);
     font-size: 1.2em;
     color: rgb(255, 255, 255);
@@ -50,11 +51,22 @@
     .carousel {
       width:auto;
       height:auto;
+      padding-bottom: 1em;
+      margin-bottom: 2em;
     }
     .carousel .carousel-caption p {
         width: 40%;
     }
     .carousel .carousel-caption .stacks{
         overflow: scroll;
+    }
+    .carousel .carousel-indicators button {
+        width: 2em;
+        height: .5em;
+        border-radius: 35%;
+        margin-bottom: -2em;
+    }
+    .carousel .carousel-caption h5 {
+        font-size: 2em;
     }
 }

@@ -1,14 +1,18 @@
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
+import { FaEnvelope } from "react-icons/fa";
+import { FaMobile } from "react-icons/fa";
 import Form from "react-bootstrap/Form";
 import { Formik } from "formik";
 import Row from "react-bootstrap/Row";
 import * as Yup from "yup";
+import "../styles/contact.css";
 
 const validationSchema = Yup.object({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
-    message: Yup.string().required("Message is required"),
+    message: Yup.string().required("Please enter a message"),
+    subject: Yup.string().required("Please enter a subject"),
 });
 
 function Contact() {
@@ -22,12 +26,21 @@ function Contact() {
                         Please fill out the form within this section to contact
                         me. Or email/text message me!
                     </p>
-                    <p>Email: michael.r.tranquillo@gmail.com </p>
-                    <p>Phone: 603-479-5933</p>
+                    <p>
+                        <FaEnvelope /> Email: michael.r.tranquillo@gmail.com{" "}
+                    </p>
+                    <p>
+                        <FaMobile /> Phone: 603-479-5933
+                    </p>
                 </Col>
                 <Col xs={12} md={6}>
                     <Formik
-                        initialValues={{ name: "", email: "", message: "" }}
+                        initialValues={{
+                            name: "",
+                            email: "",
+                            subject: "",
+                            message: "",
+                        }}
                         validationSchema={validationSchema}
                         onSubmit={() => {
                             // submit form
@@ -72,6 +85,24 @@ function Contact() {
                                 />
                                 {errors.email && touched.email && (
                                     <div className="error">{errors.email}</div>
+                                )}
+
+                                <Form.Control
+                                    name="subject"
+                                    value={values.subject}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    placeholder="Subject"
+                                    className={
+                                        errors.subject && touched.subject
+                                            ? "error"
+                                            : null
+                                    }
+                                />
+                                {errors.subject && touched.subject && (
+                                    <div className="error">
+                                        {errors.subject}
+                                    </div>
                                 )}
 
                                 <Form.Control

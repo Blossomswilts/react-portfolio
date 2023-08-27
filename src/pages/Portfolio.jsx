@@ -2,15 +2,25 @@ import Carousel from "react-bootstrap/Carousel";
 import { Container, Row } from "react-bootstrap";
 import PortfolioCard from "../components/PortfolioCard.jsx";
 import stack from "../data/stack.js";
+import { useState } from "react";
 import "../styles/carousel.css";
 
 function Portfolio() {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex) => {
+        setIndex(selectedIndex);
+    };
     return (
         <div>
             <Container>
                 <h1>Portfolio</h1>
                 <h2>Skills</h2>
-                <Carousel data-bs-theme="dark">
+                <Carousel
+                    activeIndex={index}
+                    onSelect={handleSelect}
+                    data-bs-theme="dark"
+                >
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
@@ -20,9 +30,9 @@ function Portfolio() {
                         <Carousel.Caption>
                             <h5>{stack[0].name}</h5>
                             <div className="stacks">
-                            {stack[0].technologies.map((tech) => (
-                                <p key={tech.id}>{tech.name}</p>
-                            ))}
+                                {stack[0].technologies.map((tech) => (
+                                    <p key={tech.id}>{tech.name}</p>
+                                ))}
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>

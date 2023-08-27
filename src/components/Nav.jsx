@@ -50,9 +50,15 @@ function Navigation() {
                         >
                             Contact
                         </Nav.Link>
-                        <button type="button" className="btn btn-outline-light">
-                            Resume
-                        </button>
+                        <Link 
+                            to="https://drive.google.com/file/d/1aG0iJS-b27Ez9i0mgJlAVpurfSIeqMop/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button type="button" className="btn btn-outline-light">
+                                Resume
+                            </button>
+                        </Link>
                     </Nav>
                 </Container>
             </Navbar>
