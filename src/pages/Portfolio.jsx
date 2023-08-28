@@ -75,9 +75,7 @@ function Portfolio() {
                     <h2>Projects</h2>
                 </Row>
                 <Row>
-                    <div className="portfolioCard">
                         <PortfolioCard />
-                    </div>
                 </Row>
             </Container>
         </div>

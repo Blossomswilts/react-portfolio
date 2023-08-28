@@ -91,3 +91,13 @@
         font-size: 2em;
     }
 }
+
+/* Portfolio Card Section */
+
+.projectCard {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
