@@ -15,7 +15,7 @@ const imageStyle = {
 
 const aboutMeStyle = {
     padding: "25px",
-    boxShadow: "0 0 10px green",
+    boxShadow: "4px 4px 18px green",
     margin: "20px",
 };
 
@@ -23,7 +23,10 @@ function AboutMe() {
     return (
         <div>
             <h1>About Me</h1>
-            <Container className="d-flex p-4">
+            <Container
+                className="d-flex p-4"
+                style={{ maxHeight: "100%", height: "100%" }}
+            >
                 <Row>
                     <Col xs={12} md={12} lg={6}>
                         <Image

@@ -1,6 +1,5 @@
 /* body */
 body {
-    height: 100%;
     background-color: #a3a8b2;
     color: #080808;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -8,7 +7,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
     align-items: center;
 }
 
@@ -36,7 +35,7 @@ button {
 @media screen and (max-width: 982px) {
     body {
         font-size: 14px;
-        padding-bottom: 250px;
+        /* padding-bottom: 250px; */
     }
 
     form {

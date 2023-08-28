@@ -5,10 +5,10 @@ import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const style = {
-    position: "fixed",
-    bottom: "0",
-    right: "0",
-    left: "0",
+    // position: "fixed",
+    // bottom: "0",
+    // right: "0",
+    // left: "0",
 };
 
 const linkStyles = {
@@ -20,7 +20,7 @@ const linkStyles = {
 
 function Footer() {
     return (
-        <div style={style}>
+        <div style={{ ...style, height: "30vh" }}>
             <Card
                 className="text-center"
                 bg="dark"
