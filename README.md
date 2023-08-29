@@ -21,6 +21,7 @@ Vite
 React
 React-Bootstrap
 React-Router-Dom
+React TSParticles / TSParticles
 JavaScript
 HTML
 CSS
