@@ -25,7 +25,7 @@ function Portfolio() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="../src/assets/images/hexrgb.jpg"
+                            src="/assets/images/hexrgb.jpg"
                             alt="FrontEnd"
                         />
                         <Carousel.Caption>
@@ -40,7 +40,7 @@ function Portfolio() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="../src/assets/images/hexrgb.jpg"
+                            src="/assets/images/hexrgb.jpg"
                             alt="BackEnd"
                         />
                         <Carousel.Caption>
@@ -55,7 +55,7 @@ function Portfolio() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="../src/assets/images/hexrgb.jpg"
+                            src="/assets/images/hexrgb.jpg"
                             alt="Database"
                         />
                         <Carousel.Caption>

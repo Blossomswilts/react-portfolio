@@ -10,10 +10,10 @@ function App() {
             <ParticleBackground />
             <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
                 <Navigation />
-                <main className="mx-3" style={{ height: "70vh" }}>
+                <main className="mx-3" >
                     <Outlet />
                 </main>
-                <Footer style={{ height: "30vh" }} />
+                <Footer />
             </div>
         </>
     );
