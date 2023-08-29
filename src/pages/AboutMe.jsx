@@ -30,7 +30,7 @@ function AboutMe() {
                 <Row>
                     <Col xs={12} md={12} lg={6}>
                         <Image
-                            src="../src/assets/images/profile.jpg"
+                            src="/assets/images/profile.jpg"
                             alt="profile"
                             style={imageStyle}
                         />
