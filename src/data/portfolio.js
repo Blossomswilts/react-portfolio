@@ -9,7 +9,7 @@ const PortfolioItems = [
     },
     {
         title: "Budget Planner",
-        imgUrl: "/assets/images/budgetplanner.png",
+        imgUrl: "/assets/images/budgetplanner.PNG",
         description:
             "This application allows you to track your budget by adding and subtracting funds, whilst being able to see your budget in a graph.",
         tech: "JavaScript, HTML, CSS, API, GraphJS",
