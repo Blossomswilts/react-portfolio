@@ -67,6 +67,21 @@ function Portfolio() {
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="/assets/images/hexrgb.jpg"
+                            alt="Database"
+                        />
+                        <Carousel.Caption>
+                            <h5>{stack[3].name}</h5>
+                            <div className="stacks">
+                                {stack[3].technologies.map((tech) => (
+                                    <p key={tech.id}>{tech.name}</p>
+                                ))}
+                            </div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
                 </Carousel>
             </Container>
 

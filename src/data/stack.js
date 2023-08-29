@@ -7,7 +7,7 @@ const stack = [
         technologies: [
             {
                 id: 1,
-                name: "HTML",
+                name: "HTML5",
             },
             {
                 id: 2,
@@ -25,6 +25,14 @@ const stack = [
                 id: 5,
                 name: "Bootstrap",
             },
+            {
+                id: 6,
+                name: "Bulma",
+            },
+            {
+                id: 7,
+                name: "JQuery",
+            },
         ],
     },
     {
@@ -38,6 +46,22 @@ const stack = [
             {
                 id: 2,
                 name: "Express.js",
+            },
+            {
+                id: 3,
+                name: "GraphQL",
+            },
+            {
+                id: 4,
+                name: "Rest",
+            },
+            {
+                id: 5,
+                name: "Mongoose",
+            },
+            {
+                id: 6,
+                name: "Sequelize",
             },
         ],
     },
@@ -53,21 +77,39 @@ const stack = [
                 id: 2,
                 name: "MySQL",
             },
+        ],
+    },
+    {
+        id: 4,
+        name: "Other",
+        technologies: [
+            {
+                id: 1,
+                name: "Git",
+            },
+            {
+                id: 2,
+                name: "GitHub",
+            },
             {
                 id: 3,
-                name: "Mongoose",
+                name: "Heroku",
             },
             {
                 id: 4,
-                name: "Sequelize",
+                name: "Jest",
             },
             {
                 id: 5,
-                name: "GraphQL",
+                name: "PWA",
             },
             {
                 id: 6,
-                name: "NoSQL",
+                name: "GitHub Pages",
+            },
+            {
+                id: 7,
+                name: "Linting",
             },
         ],
     },
