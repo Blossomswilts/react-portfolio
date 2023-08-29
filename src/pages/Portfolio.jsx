@@ -75,7 +75,7 @@ function Portfolio() {
                     <h2>Projects</h2>
                 </Row>
                 <Row>
-                        <PortfolioCard />
+                    <PortfolioCard />
                 </Row>
             </Container>
         </div>
