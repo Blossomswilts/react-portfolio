@@ -1,5 +1,13 @@
 const PortfolioItems = [
     {
+        title: "CompOnnect",
+        imgUrl: "https://https://user-images.githubusercontent.com/117021869/269118784-023b0030-9fd9-433f-a923-94af5ca23034.png",
+        description:
+            "This application allows companies to have an internal social media platform, and with further integration, will be used to manage employees other company daily tasks.",
+        tech: "Node.js, Express, NoSQL, MongoDB, Mongoose, JavaScript, HTML, CSS, Bootstrap, Heroku, MUI, React, Apollo, GraphQL, JWT, Bcrypt",
+        link: "https://componnect-3a658d1d17cf.herokuapp.com/",
+    },
+    {
         title: "Donomon Choice RPG",
         imgUrl: "/assets/images/donomonlogo.png",
         description:
@@ -38,14 +46,6 @@ const PortfolioItems = [
             "With this application, you are able to view, add, edit and delete products, categories and tags. This is especially useful for a business owner who wants to be able to manage their inventory and products.",
         tech: "Node.js, Sequelize, MySQL2, Express, Dotenv",
         link: "https://github.com/Blossomswilts/ecommerce-database",
-    },
-    {
-        title: "Full Stack Quiz",
-        imgUrl: "https://user-images.githubusercontent.com/117021869/235373722-f5a59aab-b82a-46d4-9651-d601d26b1991.jpg",
-        description:
-            "In this quiz, you are given questions that you must answer, which is timed. For each question you get wrong, time is deducted from the timer. Once you have completed the quiz, you are able to save your score and view it on the highscores page.",
-        tech: "HTML, CSS, JavaScript, Local Storage",
-        link: "https://blossomswilts.github.io/quiz/",
     },
 ];
 
