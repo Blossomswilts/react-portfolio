@@ -3,7 +3,7 @@ const PortfolioItems = [
         title: "CompOnnect",
         imgUrl: "https://user-images.githubusercontent.com/117021869/269118784-023b0030-9fd9-433f-a923-94af5ca23034.png",
         description:
-            "This application allows companies to have an internal social media platform, and with further integration, will be used to manage employees other company daily tasks.",
+            "This application allows companies to have an internal social media platform, and with further integration, will be used to manage employees and other company daily tasks.",
         tech: "Node.js, Express, NoSQL, MongoDB, Mongoose, JavaScript, HTML, CSS, Bootstrap, Heroku, MUI, React, Apollo, GraphQL, JWT, Bcrypt",
         link: "https://componnect-3a658d1d17cf.herokuapp.com/",
     },
