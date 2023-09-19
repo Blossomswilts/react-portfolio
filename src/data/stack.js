@@ -33,6 +33,10 @@ const stack = [
                 id: 7,
                 name: "JQuery",
             },
+            {
+                id: 8,
+                name: "Material UI",
+            },
         ],
     },
     {
@@ -63,6 +67,18 @@ const stack = [
                 id: 6,
                 name: "Sequelize",
             },
+            {
+                id: 7,
+                name: "Apollo",
+            },
+            {
+                id: 8,
+                name: "JWT",
+            },
+            {
+                id: 9,
+                name: "Bcrypt",
+            },
         ],
     },
     {
@@ -76,6 +92,10 @@ const stack = [
             {
                 id: 2,
                 name: "MySQL",
+            },
+            {
+                id: 3,
+                name: "NoSQL",
             },
         ],
     },
@@ -110,6 +130,10 @@ const stack = [
             {
                 id: 7,
                 name: "Linting",
+            },
+            {
+                id: 8,
+                name: "Socket.io",
             },
         ],
     },
