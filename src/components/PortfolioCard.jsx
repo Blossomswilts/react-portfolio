@@ -1,7 +1,9 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PublicIcon from "@mui/icons-material/Public";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import PortfolioItems from "../data/portfolio.js";
 import Row from "react-bootstrap/Row";
+import PortfolioItems from "../data/portfolio.js";
 
 function PortfolioCard() {
     return (
@@ -19,9 +21,28 @@ function PortfolioCard() {
                                 <h4>Technologies Used:</h4>
                                 {item.tech}
                             </Card.Text>
-                            <Button variant="primary" href={item.link}>
-                                Check it out!
-                            </Button>
+                            {/* if website show a button with web icon */}
+                            {item.website && (
+                                <Button
+                                    variant="primary"
+                                    href={item.website}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <PublicIcon />
+                                </Button>
+                            )}
+                            {/* if github show a button with github icon */}
+                            {item.github && (
+                                <Button
+                                    variant="primary"
+                                    href={item.github}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <GitHubIcon />
+                                </Button>
+                            )}
                         </Card.Body>
                     </Card>
                 </div>

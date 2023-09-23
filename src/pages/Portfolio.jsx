@@ -5,6 +5,7 @@ import stack from "../data/stack.js";
 import { useState } from "react";
 import "../styles/carousel.css";
 
+
 function Portfolio() {
     const [index, setIndex] = useState(0);
 
