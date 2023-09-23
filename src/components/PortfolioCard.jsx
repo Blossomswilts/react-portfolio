@@ -35,7 +35,7 @@ function PortfolioCard() {
                             {/* if github show a button with github icon */}
                             {item.github && (
                                 <Button
-                                    variant="primary"
+                                    variant="secondary"
                                     href={item.github}
                                     target="_blank"
                                     rel="noreferrer"
