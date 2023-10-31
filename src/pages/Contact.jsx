@@ -1,157 +1,108 @@
-import emailjs from "emailjs-com";
-import { Formik } from "formik";
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import { FaEnvelope, FaMobile } from "react-icons/fa";
-import * as Yup from "yup";
 import "../styles/contact.css";
 
-const validationSchema = Yup.object({
-    name: Yup.string().required("Name is required"),
-    email: Yup.string().email("Invalid email").required("Email is required"),
-    message: Yup.string().required("Please enter a message"),
-    subject: Yup.string().required("Please enter a subject"),
-});
-
 function Contact() {
-    const [submitted, setSubmitted] = useState(false);
+    const form = useRef();
+    const [showModal, setShowModal] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                "service_3gl1aa8",
+                "template_e79v5yw",
+                form.current,
+                "bDvzVs02A85JLg-o2"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    form.current.reset(); // Reset the form
+                    setShowModal(true); // Show the modal
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
 
     return (
         <div>
             <h1>Get In Touch!</h1>
             <Row>
                 <Col xs={12} md={6} className="connect">
-                    <h3>Let&apos;s connect</h3>
+                    <h3>Connect With Me</h3>
                     <p>
                         Please fill out the form within this section to contact
                         me. Or email/text message me!
                     </p>
                     <p>
-                        <FaEnvelope /> Email: michael.r.tranquillo@gmail.com{" "}
+                        <FaEnvelope /> Email: michael.r.tranquillo@gmail.com
                     </p>
                     <p>
                         <FaMobile /> Phone: 603-479-5933
                     </p>
                 </Col>
                 <Col xs={12} md={6}>
-                    <Formik
-                        initialValues={{
-                            name: "",
-                            email: "",
-                            subject: "",
-                            message: "",
-                        }}
-                        validationSchema={validationSchema}
-                        onSubmit={(values, { resetForm }) => {
-                            emailjs
-                                .send(
-                                    "service_nj68tpi",
-                                    "template_iwlo2rp",
-                                    values,
-                                    "bDvzVs02A85JLg-o2"
-                                )
-                                .then((response) => {
-                                    console.log(
-                                        "Email sent successfully:",
-                                        response
-                                    );
-                                    resetForm(); // Reset the form fields after sending the email
-                                    setSubmitted(true);
-                                })
-                                .catch((error) => {
-                                    console.error("Email error:", error);
-                                });
-                        }}
-                    >
-                        {({
-                            values,
-                            errors,
-                            touched,
-                            handleChange,
-                            handleBlur,
-                            handleSubmit,
-                        }) => (
-                            <Form onSubmit={handleSubmit}>
-                                <Form.Control
-                                    name="name"
-                                    value={values.name}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    placeholder="Name"
-                                    className={
-                                        errors.name && touched.name
-                                            ? "error"
-                                            : null
-                                    }
-                                />
-                                {errors.name && touched.name && (
-                                    <div className="error">{errors.name}</div>
-                                )}
-
-                                <Form.Control
-                                    name="email"
-                                    value={values.email}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    placeholder="Email"
-                                    className={
-                                        errors.email && touched.email
-                                            ? "error"
-                                            : null
-                                    }
-                                />
-                                {errors.email && touched.email && (
-                                    <div className="error">{errors.email}</div>
-                                )}
-
-                                <Form.Control
-                                    name="subject"
-                                    value={values.subject}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    placeholder="Subject"
-                                    className={
-                                        errors.subject && touched.subject
-                                            ? "error"
-                                            : null
-                                    }
-                                />
-                                {errors.subject && touched.subject && (
-                                    <div className="error">
-                                        {errors.subject}
-                                    </div>
-                                )}
-
-                                <Form.Control
-                                    as="textarea"
-                                    rows={5}
-                                    name="message"
-                                    value={values.message}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    placeholder="Message"
-                                    className={
-                                        errors.message && touched.message
-                                            ? "error"
-                                            : null
-                                    }
-                                />
-                                {errors.message && touched.message && (
-                                    <div className="error">
-                                        {errors.message}
-                                    </div>
-                                )}
-
-                                <Button type="submit">Submit</Button>
-                            </Form>
-                        )}
-                    </Formik>
-                    {submitted && <p>Email sent successfully!</p>}
+                    <form ref={form} onSubmit={sendEmail}>
+                        <div className="form-group">
+                            <label htmlFor="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="from_name"
+                                className="form-control"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="from_email"
+                                className="form-control"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                className="form-control"
+                            />
+                        </div>
+                        <button type="submit" className="btn btn-primary">
+                            Send
+                        </button>
+                    </form>
                 </Col>
             </Row>
+
+            {/* Modal for Success Message */}
+            <Modal show={showModal} onHide={closeModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Success!</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    Your message has been sent successfully!
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="primary" onClick={closeModal}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 }
