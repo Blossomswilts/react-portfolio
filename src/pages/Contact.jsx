@@ -1,10 +1,11 @@
+import emailjs from "emailjs-com";
+import { Formik } from "formik";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
-import { FaEnvelope } from "react-icons/fa";
-import { FaMobile } from "react-icons/fa";
 import Form from "react-bootstrap/Form";
-import { Formik } from "formik";
 import Row from "react-bootstrap/Row";
+import { FaEnvelope, FaMobile } from "react-icons/fa";
 import * as Yup from "yup";
 import "../styles/contact.css";
 
@@ -16,6 +17,8 @@ const validationSchema = Yup.object({
 });
 
 function Contact() {
+    const [submitted, setSubmitted] = useState(false);
+
     return (
         <div>
             <h1>Get In Touch!</h1>
@@ -42,8 +45,25 @@ function Contact() {
                             message: "",
                         }}
                         validationSchema={validationSchema}
-                        onSubmit={() => {
-                            // submit form
+                        onSubmit={(values, { resetForm }) => {
+                            emailjs
+                                .send(
+                                    "service_nj68tpi",
+                                    "template_iwlo2rp",
+                                    values,
+                                    "bDvzVs02A85JLg-o2"
+                                )
+                                .then((response) => {
+                                    console.log(
+                                        "Email sent successfully:",
+                                        response
+                                    );
+                                    resetForm(); // Reset the form fields after sending the email
+                                    setSubmitted(true);
+                                })
+                                .catch((error) => {
+                                    console.error("Email error:", error);
+                                });
                         }}
                     >
                         {({
@@ -129,6 +149,7 @@ function Contact() {
                             </Form>
                         )}
                     </Formik>
+                    {submitted && <p>Email sent successfully!</p>}
                 </Col>
             </Row>
         </div>
