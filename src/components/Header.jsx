@@ -60,7 +60,7 @@ function Navigation() {
                             Contact
                         </Nav.Link>
                         <Link
-                            to="https://drive.google.com/file/d/1tOEBgNj5043ZRzzfI51sMMGIzfoc9hbH/view?usp=drive_link"
+                            to="https://drive.google.com/file/d/1tOEBgNj5043ZRzzfI51sMMGIzfoc9hbH/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
