@@ -8,15 +8,15 @@ const PortfolioItems = [
         website: "https://componnect-3a658d1d17cf.herokuapp.com/",
         github: "https://github.com/ErikAmerico/Employee-Website"
     },
-    {
-        title: "Donomon Choice RPG",
-        imgUrl: "/assets/images/donomonlogo.png",
-        description:
-            "Within this application, you are able to decide the evolution of your character based on the choices you make. ",
-        tech: "MVC, MySQL, Sequelize, Express, Handlebars, Node.js, JavaScript, HTML, CSS, Bootstrap, Heroku",
-        website: "https://frozen-cliffs-11727-ff4251073048.herokuapp.com/",
-        github: "https://github.com/Blossomswilts/Donomon-Choice-RPG",
-    },
+    // {
+    //     title: "Donomon Choice RPG",
+    //     imgUrl: "/assets/images/donomonlogo.png",
+    //     description:
+    //         "Within this application, you are able to decide the evolution of your character based on the choices you make. ",
+    //     tech: "MVC, MySQL, Sequelize, Express, Handlebars, Node.js, JavaScript, HTML, CSS, Bootstrap, Heroku",
+    //     website: "https://frozen-cliffs-11727-ff4251073048.herokuapp.com/",
+    //     github: "https://github.com/Blossomswilts/Donomon-Choice-RPG",
+    // },
     {
         title: "Budget Planner",
         imgUrl: "/assets/images/budgetplanner.PNG",
