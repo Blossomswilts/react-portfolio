@@ -46,7 +46,7 @@ function Navigation() {
                             </Nav.Link>
                             <Nav.Link
                                 as={Link}
-                                to="https://drive.google.com/file/d/1tOEBgNj5043ZRzzfI51sMMGIzfoc9hbH/view?usp=sharing"
+                                to="https://docs.google.com/document/d/1IA56Tr76s3DzaGczNo1gafR3hOkMQDmWGeGp9bu7X20/edit?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 <button type="button" className="btn btn-outline-light">
