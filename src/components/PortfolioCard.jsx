@@ -1,10 +1,10 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
-import PublicIcon from "@mui/icons-material/Public";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import PortfolioItems from "../data/portfolio.js";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import PublicIcon from '@mui/icons-material/Public';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import PortfolioItems from '../data/portfolio.js';
 
 function PortfolioCard() {
     return (
@@ -33,8 +33,7 @@ function PortfolioCard() {
                                                 href={item.website}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="me-2"
-                                            >
+                                                className="me-2">
                                                 <PublicIcon />
                                             </Button>
                                         )}
@@ -43,8 +42,7 @@ function PortfolioCard() {
                                                 variant="secondary"
                                                 href={item.github}
                                                 target="_blank"
-                                                rel="noreferrer"
-                                            >
+                                                rel="noreferrer">
                                                 <GitHubIcon />
                                             </Button>
                                         )}
@@ -72,8 +70,7 @@ function PortfolioCard() {
                                                 href={item.website}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="me-2"
-                                            >
+                                                className="me-2">
                                                 <PublicIcon />
                                             </Button>
                                         )}
@@ -82,8 +79,7 @@ function PortfolioCard() {
                                                 variant="secondary"
                                                 href={item.github}
                                                 target="_blank"
-                                                rel="noreferrer"
-                                            >
+                                                rel="noreferrer">
                                                 <GitHubIcon />
                                             </Button>
                                         )}

@@ -3,137 +3,137 @@
 const stack = [
     {
         id: 1,
-        name: "Front-End",
+        name: 'Front-End',
         technologies: [
             {
                 id: 1,
-                name: "HTML5",
+                name: 'HTML5',
             },
             {
                 id: 2,
-                name: "CSS",
+                name: 'CSS',
             },
             {
                 id: 3,
-                name: "JavaScript",
+                name: 'JavaScript',
             },
             {
                 id: 4,
-                name: "React",
+                name: 'React',
             },
             {
                 id: 5,
-                name: "Bootstrap",
+                name: 'Bootstrap',
             },
             {
                 id: 6,
-                name: "Bulma",
+                name: 'Bulma',
             },
             {
                 id: 7,
-                name: "JQuery",
+                name: 'JQuery',
             },
             {
                 id: 8,
-                name: "Material UI",
+                name: 'Material UI',
             },
         ],
     },
     {
         id: 2,
-        name: "Back-End",
+        name: 'Back-End',
         technologies: [
             {
                 id: 1,
-                name: "Node.js",
+                name: 'Node.js',
             },
             {
                 id: 2,
-                name: "Express.js",
+                name: 'Express.js',
             },
             {
                 id: 3,
-                name: "GraphQL",
+                name: 'GraphQL',
             },
             {
                 id: 4,
-                name: "Rest",
+                name: 'Rest',
             },
             {
                 id: 5,
-                name: "Mongoose",
+                name: 'Mongoose',
             },
             {
                 id: 6,
-                name: "Sequelize",
+                name: 'Sequelize',
             },
             {
                 id: 7,
-                name: "Apollo",
+                name: 'Apollo',
             },
             {
                 id: 8,
-                name: "JWT",
+                name: 'JWT',
             },
             {
                 id: 9,
-                name: "Bcrypt",
+                name: 'Bcrypt',
             },
         ],
     },
     {
         id: 3,
-        name: "Database",
+        name: 'Database',
         technologies: [
             {
                 id: 1,
-                name: "MongoDB",
+                name: 'MongoDB',
             },
             {
                 id: 2,
-                name: "MySQL",
+                name: 'MySQL',
             },
             {
                 id: 3,
-                name: "NoSQL",
+                name: 'NoSQL',
             },
         ],
     },
     {
         id: 4,
-        name: "Other",
+        name: 'Other',
         technologies: [
             {
                 id: 1,
-                name: "Git",
+                name: 'Git',
             },
             {
                 id: 2,
-                name: "GitHub",
+                name: 'GitHub',
             },
             {
                 id: 3,
-                name: "Heroku",
+                name: 'Heroku',
             },
             {
                 id: 4,
-                name: "Jest",
+                name: 'Jest',
             },
             {
                 id: 5,
-                name: "PWA",
+                name: 'PWA',
             },
             {
                 id: 6,
-                name: "GitHub Pages",
+                name: 'GitHub Pages',
             },
             {
                 id: 7,
-                name: "Linting",
+                name: 'Linting',
             },
             {
                 id: 8,
-                name: "Socket.io",
+                name: 'Socket.io',
             },
         ],
     },
