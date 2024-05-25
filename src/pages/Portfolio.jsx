@@ -17,7 +17,7 @@ function Portfolio() {
                 <h1>Portfolio</h1>
                 <h2>Skills I&apos;ve Acquired</h2>
                 <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="dark" interval={null}>
-                    <Carousel.Item>
+                    <Carousel.Item className='custom-carousel-item'>
                         <img className="d-block w-100" src="/assets/images/hexrgb.jpg" alt="FrontEnd" />
                         <Carousel.Caption>
                             <h5>{stack[0].name}</h5>
@@ -28,7 +28,7 @@ function Portfolio() {
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item className='custom-carousel-item'>
                         <img className="d-block w-100" src="/assets/images/hexrgb.jpg" alt="BackEnd" />
                         <Carousel.Caption>
                             <h5>{stack[1].name}</h5>
@@ -39,7 +39,7 @@ function Portfolio() {
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item className='custom-carousel-item'>
                         <img className="d-block w-100" src="/assets/images/hexrgb.jpg" alt="Database" />
                         <Carousel.Caption>
                             <h5>{stack[2].name}</h5>
@@ -50,7 +50,7 @@ function Portfolio() {
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item className='custom-carousel-item'>
                         <img className="d-block w-100" src="/assets/images/hexrgb.jpg" alt="Database" />
                         <Carousel.Caption>
                             <h5>{stack[3].name}</h5>

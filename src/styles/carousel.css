@@ -76,10 +76,17 @@
         margin-bottom: 2em;
     }
     .carousel .carousel-caption p {
-        width: 40%;
+        width: 27%;
+        margin-left: 1em;
     }
-    .carousel .carousel-caption .stacks {
-        overflow: scroll;
+    div.carousel-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        font-size: .8em;
+        width: auto;
     }
     .carousel .carousel-indicators button {
         width: 2em;

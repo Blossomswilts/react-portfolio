@@ -125,7 +125,7 @@ const stack = [
             },
             {
                 id: 6,
-                name: 'GitHub Pages',
+                name: 'GitHub Pgs',
             },
             {
                 id: 7,
