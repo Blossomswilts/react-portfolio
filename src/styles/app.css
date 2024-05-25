@@ -2,7 +2,7 @@
 body {
     background-color: #a3a8b2;
     color: #080808;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
@@ -40,5 +40,13 @@ button {
 
     form {
         padding-right: 0;
+    }
+}
+
+/* media for smaller screens so that the top of page is under header more */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+        padding-top: 50px;
     }
 }

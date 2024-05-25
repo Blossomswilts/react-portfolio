@@ -1,0 +1,14 @@
+@media (max-width: 991px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px; /* Adjust this value as needed */
+        z-index: 1; /* Ensure it appears above the toggle */
+    }
+
+    .navbar-toggler {
+        z-index: 2;
+        margin-top: 40px; /* Adjust to align with the brand */
+    }
+}
