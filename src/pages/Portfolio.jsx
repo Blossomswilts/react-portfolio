@@ -1,10 +1,9 @@
-import Carousel from "react-bootstrap/Carousel";
-import { Container, Row } from "react-bootstrap";
-import PortfolioCard from "../components/PortfolioCard.jsx";
-import stack from "../data/stack.js";
-import { useState } from "react";
-import "../styles/carousel.css";
-
+import { useState } from 'react';
+import { Container, Row } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
+import PortfolioCard from '../components/PortfolioCard.jsx';
+import stack from '../data/stack.js';
+import '../styles/carousel.css';
 
 function Portfolio() {
     const [index, setIndex] = useState(0);
@@ -17,18 +16,9 @@ function Portfolio() {
             <Container>
                 <h1>Portfolio</h1>
                 <h2>Skills I&apos;ve Acquired</h2>
-                <Carousel
-                    activeIndex={index}
-                    onSelect={handleSelect}
-                    data-bs-theme="dark"
-                    interval={null}
-                >
+                <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="dark" interval={null}>
                     <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="/assets/images/hexrgb.jpg"
-                            alt="FrontEnd"
-                        />
+                        <img className="d-block w-100" src="/assets/images/hexrgb.jpg" alt="FrontEnd" />
                         <Carousel.Caption>
                             <h5>{stack[0].name}</h5>
                             <div className="stacks">
@@ -39,11 +29,7 @@ function Portfolio() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="/assets/images/hexrgb.jpg"
-                            alt="BackEnd"
-                        />
+                        <img className="d-block w-100" src="/assets/images/hexrgb.jpg" alt="BackEnd" />
                         <Carousel.Caption>
                             <h5>{stack[1].name}</h5>
                             <div className="stacks">
@@ -54,11 +40,7 @@ function Portfolio() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="/assets/images/hexrgb.jpg"
-                            alt="Database"
-                        />
+                        <img className="d-block w-100" src="/assets/images/hexrgb.jpg" alt="Database" />
                         <Carousel.Caption>
                             <h5>{stack[2].name}</h5>
                             <div className="stacks">
@@ -69,11 +51,7 @@ function Portfolio() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="/assets/images/hexrgb.jpg"
-                            alt="Database"
-                        />
+                        <img className="d-block w-100" src="/assets/images/hexrgb.jpg" alt="Database" />
                         <Carousel.Caption>
                             <h5>{stack[3].name}</h5>
                             <div className="stacks">
