@@ -24,3 +24,19 @@ h3 {
     background-color: #afafb0c5;
     box-shadow: 0 0 10px #000000;
 }
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 2em;
+        margin-right: 0;
+    }
+    p {
+        margin: 0 0 1rem 0;
+    }
+    .card-text {
+        margin-right: 0;
+    }
+    form {
+        padding-top: 1.5em;
+    }
+}
